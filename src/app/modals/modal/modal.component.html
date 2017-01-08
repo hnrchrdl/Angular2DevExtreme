@@ -1,0 +1,7 @@
+<p>
+  modal works!
+</p>
+<div class="modal-background" *ngIf="modalsService.modal?.shown">
+  <button (click)="modalsService.setModal(false, {})">hide modal</button>
+  <button (click)="modalsService.setModal(true, {})">show modal</button>
+</div>
